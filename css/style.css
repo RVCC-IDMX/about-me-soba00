@@ -2,11 +2,15 @@ body{
     font-family: Merriweather;
     background-color:#1F332D ;
     color: #11A881;
+    font-size: 18pt;
+    line-height: 1.6;
 
 }
 
 h1,h2,h3,h4,h5,h6{
     font-family: Calistoga;
+}
+h1{
     font-size: 60pt;
 }
 
@@ -15,10 +19,10 @@ header{
     font-variant: small-caps;
 }
 
-#hero,footer{
+#hero, footer{
     background-color:#510C09;
     text-align: center;
-    font-size: 20pt;
+    font-size: 1.3em;
     padding: 13px;
     border: 4px solid #8B2A27;
 }
@@ -26,5 +30,26 @@ header{
     width:300px;
 }
 #bio{
-    font-size: 13pt;
+    font-size: 18pt;
+    text-align: center;
+    padding: 15px;
+}
+#hobbies{
+    background-color:#7EA66E;
+    color: #8B2A27;
+    border: 4px solid #8B2A27;
+    padding: 15px;
+    padding-left:40px;
+    margin-bottom: 30px;
+}
+
+#hobbies ul {
+    list-style-type: square;
+    padding-left: 60px;
+}
+#hobbies li {
+    margin-bottom: 8px;
+}
+#hobbies li:hover {
+    color: #510C09;
 }
