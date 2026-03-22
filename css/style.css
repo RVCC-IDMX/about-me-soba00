@@ -12,6 +12,7 @@ h1,h2,h3,h4,h5,h6{
 }
 h1{
     font-size: 60pt;
+    text-shadow: 2px 2px 4px rgba(0,0,0,.5);
 }
 
 header{
@@ -37,6 +38,9 @@ header{
     text-align: center;
     padding: 15px;
 }
+#bio h2{
+    text-shadow: 2px 2px 2px rgba(0,0,0,.5);
+}
 
 /* HOBBIES */
 #hobbies{
@@ -46,6 +50,10 @@ header{
     padding: 15px;
     padding-left:40px;
     margin-bottom: 30px;
+}
+
+#hobbies h2{
+    text-shadow: 2px 2px 2px rgba(0,0,0,.5);
 }
 
 #hobbies ul {
@@ -67,6 +75,9 @@ header{
     padding-left:40px;
     margin-bottom: 30px;
 }
+#gallery h2{
+    text-shadow: 2px 2px 2px rgba(0,0,0,.5);
+}
 #gallery img{
     max-width: 100%;
     border: 5px solid #11A881;
@@ -75,4 +86,36 @@ header{
 #gallery figure{
     text-align: center;
 
+}
+/* TEXT */
+#text{
+    background-color:#7EA66E;
+    color: #8B2A27;
+    border: 4px solid #8B2A27;
+    padding: 15px;
+    padding-left:40px;
+    margin-bottom: 30px;
+}
+#text h2{
+    text-align: center;
+    font-size: 3rem;
+    text-shadow: 2px 2px 2px rgba(0,0,0,.5);
+}
+#text div{
+    padding-left:2rem;
+    padding-right:2rem;
+    padding-bottom:2rem;
+    max-width: 60rem;
+    margin: 0 auto;
+    clear:both;
+}
+
+
+#text div p:first-letter {
+    color:#8B2A27;
+    float:left;
+    font-size: 3rem;
+    padding: .2em;
+    line-height: .3;
+    text-shadow: 2px 2px 2px rgba(0,0,0,.5);
 }
