@@ -19,6 +19,7 @@ header{
     font-variant: small-caps;
 }
 
+/* HERO */
 #hero, footer{
     background-color:#510C09;
     text-align: center;
@@ -29,11 +30,15 @@ header{
 #hero img {
     width:300px;
 }
+
+/* BIO */
 #bio{
     font-size: 18pt;
     text-align: center;
     padding: 15px;
 }
+
+/* HOBBIES */
 #hobbies{
     background-color:#7EA66E;
     color: #8B2A27;
@@ -52,4 +57,22 @@ header{
 }
 #hobbies li:hover {
     color: #510C09;
+}
+
+/* GALLERY */
+#gallery{
+    background-color:#510C09;
+    border: 4px solid #8B2A27;
+    padding: 15px;
+    padding-left:40px;
+    margin-bottom: 30px;
+}
+#gallery img{
+    max-width: 100%;
+    border: 5px solid #11A881;
+
+}
+#gallery figure{
+    text-align: center;
+
 }
