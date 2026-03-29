@@ -44,6 +44,9 @@ header{
 
 /* HOBBIES */
 #hobbies{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color:#7EA66E;
     color: #8B2A27;
     border: 4px solid #8B2A27;
