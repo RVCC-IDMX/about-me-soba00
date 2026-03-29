@@ -116,11 +116,34 @@ header{
 }
 
 
-#text div p:first-letter {
+#text div p:first-child::first-letter {
     color:#8B2A27;
     float:left;
     font-size: 3rem;
     padding: .2em;
     line-height: .3;
     text-shadow: 2px 2px 2px rgba(0,0,0,.5);
+}
+
+@media screen and (min-width: 60em) {
+
+    #gallery figure{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1rem;
+    }
+
+    #gallery figcaption {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        font-size:2rem;
+        margin-left: 1rem;
+    }
+
+    #text div {
+        max-width: 100%;
+        columns: 40rem;
+    }
+
 }
