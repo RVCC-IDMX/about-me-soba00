@@ -126,6 +126,40 @@ header{
     text-shadow: 2px 2px 2px rgba(0,0,0,.5);
 }
 
+/*VID*/
+#video {
+    background-color: #510C09;
+    border: 4px solid #8B2A27;
+    padding: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#video h2 {
+    text-shadow: 2px 2px 2px rgba(0,0,0,.5);
+}
+
+#myVideo {
+    display: block;
+    margin: 1.5rem auto;
+    width: 100%;
+    max-width: 800px;
+    aspect-ratio: 16/9;
+
+    border: 5px solid #11A881;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(17,168,129,0.6);
+}
+
+#video figcaption {
+    margin-top: 10px;
+    font-size:  1.2rem;
+    color: #11A881;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.5);
+}
+
+
 /*TABLETS*/
 @media screen and (min-width: 60em) {
 
@@ -146,6 +180,11 @@ header{
     #text div {
         max-width: 100%;
         columns: 40rem;
+    }
+
+    #video figure {
+        max-width: 900px;
+        margin: 0 auto;
     }
 
 }
