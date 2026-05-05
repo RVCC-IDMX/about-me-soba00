@@ -162,9 +162,69 @@ header{
 /*CONTACT FORM*/
 #formElements {
     display:grid;
+    row-gap: 0.75rem;
+}
+#contact {
+    padding: 1rem;
+    max width: 600px;
+    margin: 2rem auto;
+}
+fieldset {
+    border: 2px solid #11A881;
+    border-left: 4px solid #11A881;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+#contact fieldset fieldset {
+    background-color: #1F332D;
+    color: #11A881;
+    border-left: 4px solid #11A881;
+    padding: .75rem;
+}
+legend {
+    border: 2px solid #11A881;
+    background-color: #510C09;
+    padding: .5em;
+}
+#contact input, #contact textarea, #contact select, #contact button {
+    padding: .5em;
+    font-size: 1rem;
+    border-radius: 4px;
+
+}
+#contact label {
+    margin-top: .5rem;
+    font-weight: bold;
 }
 
-
+#contact ul {
+    list-style: none;
+    padding: 0px;
+}
+#contact li {
+    margin:.5 rem;
+}
+#contact input:focus {
+    outline: none;
+    border: 2px solid #11A881;
+    box-shadow: 0 0 16px rgba(17,168,129,0.6);
+}
+#contact button {
+    background-color:  #510C09;
+    color: #11A881;
+    border: 1px solid #11A881 ;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 50%;
+    justify-self: center;
+}
+#contact button:hover {
+    background-color: #11A881;
+    color: #510C09;
+    border: 2px solid #8B2A27 ;
+    transform: scale(1.2);
+    box-shadow: 0 0 8px rgba(17,168,129,0.6);
+}
 
 
 /*TABLETS*/
@@ -194,6 +254,14 @@ header{
         margin: 0 auto;
     }
 
+    #formElements {
+        grid-template-columns: 0.5fr 1fr;
+        column-gap: 1rem;
+    }
+    #contact textarea, #contact fieldset, #contact button {
+        grid-column: 1/-1;
+    }
+
 }
 /* LARGE SCREENS*/
 @media screen and (min-width: 100em) {
@@ -209,5 +277,8 @@ header{
     }
     #gallery figure{
         display: block;
+    }
+    #contact {
+        max-width: 900px;
     }
 }
