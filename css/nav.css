@@ -42,11 +42,13 @@ main {
     align-items: center;
 }
 .logo img{
-    height: 7vw;
-    width: 7vw;
+    /* height: 7vw;
+    width: 7vw; */
+    height: clamp(40px, 5vw,70px);
+    width: clamp(40px, 5vw,70px);
 }
 .logo h1 {
-    font-size: 1.5em;
+    font-size: clamp(1.8rem, 2.5vw, 2.7rem);
 }
 
 /* navigation list */
@@ -94,7 +96,7 @@ such that no text wraps
     } */
     .navbar ul {
         display: flex;
-        justify-content: space-between;
+        gap: 1rem;
     }
 
 }
