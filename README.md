@@ -1,41 +1,55 @@
 # README
 
-About Me Website
+# About Me Website
 
-Author
+##  Author
     Federico Cadavid Rojas
 
-Live Site
+---
+
+## Live Site
     [![Netlify Status](https://api.netlify.com/api/v1/badges/4c0fa31f-a621-4d3a-b120-90cf1dc88c70/deploy-status)](https://app.netlify.com/projects/about-me-soba00/deploys)
 
-Project Description
+---
 
-    Site provides a fullly responsive "About Me" portfolio website, created as part of the Web Dev 1 course at RVCC. This website is meant to serve as a personal blog and portfolio moving forward while directly demonstrating front end development skills including:
-        -Semantic HTML
-        -CSS Styling
-        -Responsie Design Techniques
-        -Embbeded media
-        -Webform Design and application
-        -C.R.A.P UI/UX Principles
-    This site contains si split into multiple different sections, each showcasing one or more of these. The site is seperated into sections as follows:
-        -Bio section
-        -Photo Gallery
-        -Blog
-        -Contact Me
+## Project Description
 
-Color Palette
+Site provides a fullly responsive "About Me" portfolio website, created as part of the Web Dev 1 course at RVCC.
 
-    #0F1C2E (dark blue)
-    #E6F1F5 (light text)
-    #4A7C74 (slate green)
-    #2EC4B6 (aquamarine)
-    #1B2F4A (secondary dark blue)
+This website is meant to serve as a personal blog and portfolio moving forward while directly demonstrating front end development skills including:
+    -Semantic HTML
+    -CSS Styling
+    -Responsie Design Techniques
+    -Embbeded media
+    -Webform Design and application
+    -C.R.A.P UI/UX Principles
 
-    This site uses a "sea and slate" inspired theme, combining dark blues with slate-green and aquamarine accents with the aim of a clean, yet nature inspired, easy to navigate expirence. The palette's contrasting text and highlight colors were selected to maintain visual heirachy (thus impoving readability) while ensuring acceibility for visitors with visual impairments.
+This site contains multiple different sections, each showcasing one or more of these. The site is seperated into sections as follows:
+    -Bio section
+    -Ressponsive Photo Gallery
+    -Blog section
+    -Contact Me form section
 
+---
 
-Acessibility Considerations
-    Palette was selected using WCAG readibility standards as a guideline, specifically following the text and background color contrast ratio tresholds (passing WCAG AAA standards at current text sizes),
+## Color Palette
+
+| Color | Hex Code | RGB |
+|---|---|---|
+| Dark Blue Background | `#0F1C2E` | `rgb(15, 28, 46)` |
+| Light Text | `#E6F1F5` | `rgb(230, 241, 245)` |
+| Slate Green | `#4A7C74` | `rgb(74, 124, 116)` |
+| Aquamarine Accent | `#2EC4B6` | `rgb(46, 196, 182)` |
+| Secondary Dark Blue | `#1B2F4A` | `rgb(27, 47, 74)` |
+
+This site uses a "sea and slate" inspired theme, combining dark blues with slate-green and aquamarine accents with the aim of a clean, yet nature inspired, easy to navigate expirence.
+
+The palette's contrasting text and highlight colors were selected to maintain visual heirachy (thus impoving readability) while ensuring acceibility for visitors with visual impairments.
+
+---
+
+## Acessibility Considerations
+    Palette was selected using WCAG readibility standards as a guideline, specifically following the text and background color contrast ratio tresholds and sizes; passing WCAG AAA standards at current text sizes.
 
 
 Citations
@@ -51,3 +65,16 @@ Lisence
     Copyright (c) 2026 Federico Cadavid Rojas
 
     Permission is hereby granted to any person obtaining a copy of this project and its associated files, open use of this software free of charge
+
+Future Updates
+    -adding JavaScript for form validation and interactivity independent from netlify
+    -fully integrated keyboard only navigation
+    -implement full moible page version
+    -Multi-page structure
+        -New portfolio pages including expanded "Gallery" and Blog pages
+        -New "Projects" home page section and independent page
+        -improved multi-page compatible navigation system
+    -Scalability and long term use
+        -minimize Netlify dependancy
+        -restructure into a more professional portfolio design
+        -adding easy ways to update site with new portfolio "posts" instead of manual editing
