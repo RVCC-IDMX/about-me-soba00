@@ -2,7 +2,7 @@ body{
     font-family: Merriweather;
     background-color:#1F332D ;
     color: #11A881;
-    font-size: 18pt;
+    font-size: 1.125rem;
     line-height: 1.6;
 
 }
@@ -176,11 +176,18 @@ header{
     max-width: 1100px;
     margin: 2rem auto;
 }
+#contact h2 {
+    text-align: center;
+    font-size: 3rem;
+    text-shadow: 2px 2px 2px rgba(0,0,0,.5);
+    margin-top: 0;
+    margin-bottom: .5rem;
+}
 fieldset {
     border: 2px solid #11A881;
     border-left: 4px solid #11A881;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin: 0;
+    padding: 1rem;
 }
 #contact fieldset fieldset {
     background-color: #1F332D;
@@ -191,7 +198,8 @@ fieldset {
 legend {
     border: 2px solid #11A881;
     background-color: #510C09;
-    padding: .5em;
+    padding: .4em;
+    font-size: 1.4rem;
 }
 #contact input, #contact textarea, #contact select, #contact button {
     padding: .5em;
@@ -202,6 +210,7 @@ legend {
 #contact label {
     margin-top: .5rem;
     font-weight: bold;
+    font-size: 1.4 rem;
 }
 
 #contact ul {
@@ -233,6 +242,31 @@ legend {
     box-shadow: 0 0 8px rgba(17,168,129,0.6);
 }
 
+/*PHONES*/
+
+@media screen and (max-width: 30em) {
+    #contact {
+        font-size: 0.9rem;
+    }
+    #contact input, #contact textarea, #contact select, #contact button {
+        font-size: 1rem;
+        height: .5rem;
+        padding: 0.6rem;
+    }
+    #contact label {
+        font-size: .9rem;
+    }
+    #contact button {
+        font-size: .95rem;
+        padding: .5rem;
+        min-height: 2.5rem;
+    }
+    #contact legend {
+    padding: .3rem;
+    font-size: .9rem;
+    }
+
+}
 
 /*TABLETS*/
 @media screen and (min-width: 60em) {
