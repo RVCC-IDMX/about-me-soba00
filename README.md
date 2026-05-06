@@ -66,7 +66,8 @@ The following is a list of media and resorces used or referenced in the creation
  - Images used in the gallery are original unless otherwise specified
 
 ## Lisence
-MIT License
+
+### MIT License
 
 Copyright (c) 2026 Federico Cadavid Rojas
 
