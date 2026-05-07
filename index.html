@@ -61,6 +61,8 @@
 
                 <h2>Biography:</h2>
 
+                <img src="img/me-640w.png" alt="Photo of me!">
+
                 <div>
                     <p>Soba noodles trying to code?</p>
                     <p>Computer science student</p>
@@ -145,54 +147,162 @@
             </section>
 
             <article id="text">
-                <h2>Pride and Predjudice</h2>
+
+                <h2>Hover Effects in Modern Web Design</h2>
 
                 <div>
-                    <p>Mr. Bennet was so odd a mixture of quick parts, sarcastic
-                        humour, reserve,
-                        and caprice, that the experience of three-and-twenty
-                        years had been
-                        insufficient to make his wife understand his character.
-                        Her mind was less
-                        difficult to develop. She was a woman of mean
-                        understanding, little
-                        information, and uncertain temper. When she was
-                        discontented, she fancied
-                        herself nervous.</p>
 
-                    <p>The village of Longbourn was only one mile from Meryton;
-                        a most convenient
-                        distance for the young ladies, who were usually tempted
-                        thither three or
-                        four times a week, to pay their duty to their aunt and
-                        to a milliner's shop
-                        just over the way. The two youngest of the family,
-                        Catherine and Lydia, were
-                        particularly frequent in these attentions.</p>
-
-                    <p>It is a truth universally acknowledged, that a single man
-                        in possession of a
-                        good fortune, must be in want of a wife. However little
-                        known the feelings
-                        or views of such a man may be on his first entering a
-                        neighbourhood, this
-                        truth is so well fixed in the minds of the surrounding
-                        families, that he is
-                        considered as the rightful property of some one or other
-                        of their daughters.
+                    <p>
+                        Although simple and relatively easy to use, hover
+                        effects are one of
+                        those little flourishes that punch WAAAY above their
+                        weight class
+                        and do a lot of the aesthetic heavy lifting that makes
+                        websites feel
+                        more interactive and "alive." When combined with other
+                        effects like
+                        shadows, transforms, and transitions to animate effects,
+                        their use
+                        alone can radically reshape how a site feels. BUT that's
+                        getting a
+                        bit ahead of ourselves, first what actually are hover
+                        effects?
                     </p>
 
-                    <p>In vain have I struggled. It will not do. My feelings
-                        will not be repressed.
-                        You must allow me to tell you how ardently I admire and
-                        love you.
-                        Elizabeth's astonishment was beyond expression. She
-                        stared, coloured,
-                        doubted, and was silent. This he considered sufficient
-                        encouragement; and
-                        the avowal of all that he felt, and had long felt for
-                        her, immediately
-                        followed.</p>
+                    <p>
+                        Well, MDN Web Docs states that the :hover pseudo-class
+                        is used to “apply
+                        styles when a user designates an element with a pointing
+                        device” (SOURCE:
+                        MDN Web Docs :hover CSS pseudo-class), which may sound
+                        complicated but to
+                        put it plainly, hover effects occur when you hover your
+                        mouse pointer over
+                        an element and CSS changes that element's attributes in
+                        response. We do this
+                        using :hover, a pseudo-class that gives the browser a
+                        set of styles to apply
+                        to a corresponding element ONLY when the cursor is over
+                        it. Simple right?
+                        Yeah, well, so are levers and y'know what Archimedes
+                        said. Despite their
+                        straightforwardness, due to the rather "haptically
+                        lacking" nature of
+                        websites, hover effects end up being one of the best
+                        (and only) ways we can
+                        provide users feedback as they navigate our site.
+                    </p>
+
+                    <p>
+                        Personally, I used them a bunch in this very site! Go
+                        ahead and check out
+                        the Gallery again, as you hover your mouse over each
+                        picture, you'll see it
+                        expand and slightly glow. Pretty neat right? Not only
+                        does it add a nice
+                        flourish, but it also draws in the attention of
+                        visitors, with the expanding
+                        effect making the image easier to see and the glow
+                        effect visually
+                        emphasizing it from the background.
+                    </p>
+
+                    <!-- GALLERY HOVER COMPARISON PLACEHOLDER -->
+                    <div class="hover-example">
+                        <p>[SPACE FOR PICTURES OF HOVER USE IN GALLERY]</p>
+                        <p>[IMAGE 1: BEFORE HOVER]</p>
+                        <p>[IMAGE 2: ON HOVER]</p>
+                    </div>
+
+                    <p>
+                        To do the actual effect, we just used the :hover class
+                        for the images in the
+                        Gallery section and paired it with the use of the
+                        "transform" rule to give
+                        the enlarging effect and a box shadow of a bright color
+                        to create a glow. I
+                        also used a hover effect in the Contact Me page to
+                        provide more of that
+                        "kinetic" feedback I mentioned earlier to the submission
+                        button. Though it
+                        may seem purely aesthetic, providing feedback to user
+                        interactions is
+                        ESSENTIAL for ease of navigation and lending a tactile
+                        response to user
+                        actions, and hover effects are amazing at this. To quote
+                        the Framer YouTube
+                        channel in their Mastering animations and interactions
+                        series: "Hover and
+                        press effects are small touches that make a big
+                        difference by giving
+                        visitors tangible feedback that makes it super clear if
+                        something is
+                        clickable in the first place and if they've clicked it
+                        successfully."
+                        (SOURCE: Using Hover and Press Effects in Framer
+                        (Animation Lesson 2)).
+                        Especially in the context of buttons and other
+                        interactables, making sure
+                        the user can find them and understand when they've
+                        successfully pressed them
+                        is critical to avoid mistakes or clunky UX, and hover
+                        effects are a great
+                        way to get started.
+                    </p>
+
+                    <p>
+                        Ok so hover effects can be used as a launching off point
+                        to combine multiple
+                        effects and animations, they are one of the most simple
+                        and elegant ways to
+                        add feedback, AND they're easy to use? What can't they
+                        do, right?!
+                    </p>
+
+                    <p>
+                        Well, not so fast because it turns out hover effects do
+                        still have their
+                        flaws. To start, it's incredibly easy to overdo them
+                        because they
+                        automatically react to cursor overlap. Having too many
+                        can "flashbang" your
+                        visitor with effects like popups, color changes, and
+                        glow effects, leading
+                        to an uncomfortable and distracting user experience.
+                        Hover effects also have
+                        some less straightforward drawbacks that I hadn't really
+                        even considered.
+                        When researching this topic for example, I stumbled upon
+                        an article titled,
+                        rather enticingly, “Why you should not use the hover
+                        event” and in it,
+                        Medium.com writer Joi Schünemann brings up the excellent
+                        point that you
+                        can't really “hover” on a touch screen. He points out:
+                        “The biggest issue is
+                        that there is no hover effect on touch screens. Since
+                        you are operating
+                        mobile devices with your fingers, there is no way to
+                        hover over certain
+                        elements.” (SOURCE: “Why you should not use the hover
+                        event”). This is
+                        important as it not only means a sizable percentage of
+                        users will never
+                        interact with an aspect of your site, it also means we
+                        can't solely rely on
+                        hover effects to do all the heavy lifting with feedback
+                        for users.
+                    </p>
+
+                    <p>
+                        To end this post off here, for me, hover effects ended
+                        up being one of the
+                        simplest but most important parts of the site. They take
+                        barely any code to
+                        implement, but they change how the entire page feels as
+                        you interact with
+                        it.
+                    </p>
 
                 </div>
             </article>
@@ -280,6 +390,12 @@
         </main>
         <footer>
             ©2026 - Federico Cadavid Rojas
+            <p>
+                <a href="https://github.com/RVCC-IDMX/about-me-soba00"
+                    target="_blank">
+                    Github Repository
+                </a>
+            </p>
         </footer>
         <p>Now on Netlify!</p>
     </body>
