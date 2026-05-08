@@ -32,6 +32,15 @@
                         alt="spray painted tag reads SOBA">
                     <h1>Web Dev I</h1>
                 </div>
+
+                <button class="toggle-button"
+                    aria-label="Toggle Navigation Menu" aria-expanded="false">
+                    <!-- Here for accesibity to avoid accecibility features from screen reading '☰' as "trigram for heaven" -->
+                    <span aria-hidden="true">
+                        ☰
+                    </span>
+                </button>
+
                 <div class="navbar-links">
                     <ul>
                         <li><a href="#bio">Bio</a></li>
@@ -405,6 +414,19 @@
             </p>
         </footer>
         <p>Now on Netlify!</p>
+
+        <script>
+            const button = document.querySelector(".toggle-button");
+            const menu = document.querySelector(".navbar-links");
+
+            button.addEventListener("click", () => {
+                menu.classList.toggle("active");
+
+                const expanded = button.getAttribute("aria-expanded") === "true";
+                button.setAttribute("aria-expanded", !expanded);
+            });
+
+        </script>
     </body>
 
 </html>

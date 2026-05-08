@@ -23,7 +23,6 @@ main {
 }
 
 /* navbar */
-
 .navbar {
     background-color: #333;
     color: whitesmoke;
@@ -32,8 +31,8 @@ main {
     font-size: 1.8rem;
     margin-bottom: 1rem;
     padding: 1rem;
+    flex-wrap: nowrap;
 }
-
 
 /* logo */
 
@@ -48,17 +47,21 @@ main {
     width: clamp(40px, 5vw,70px);
 }
 .logo h1 {
-    font-size: clamp(1.8rem, 2.5vw, 2.7rem);
+    font-size: clamp(2rem, 2.5vw, 2.7rem);
+    white-space: nowrap;
+    padding-left: 1rem;
 }
 
 /* navigation list */
+.navbar-links {
+    width: 100%;
+}
 .navbar-links li{
     list-style: none;
     display: block;
     padding: 0.5em 0;
+    width: 100%;
 }
-
-
 /*
  style all a tags in header
  and then on hover
@@ -68,10 +71,11 @@ main {
     color: whitesmoke;
     background-color: #333;
     font-size: 1.5rem;
-    padding: .7rem 1.25rem;
+    padding: .5rem 1rem;
     letter-spacing: 2px;
     text-decoration: none;
     display: inline-block;
+    white-space: nowrap;
 }
 
 .navbar-links a:hover,.navbar-links a:focus {
@@ -80,11 +84,55 @@ main {
     outline: none;
 }
 
+/* HAMBUGER MENU BUTTON (hidden by default) */
+.toggle-button {
+    display: none;
+    background: none;
+    border: none;
+    color: whitesmoke;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
 /*
 media query for non-mobile nav bar
 min-width set to width of nav elements
 such that no text wraps
 */
+
+/*PHONES*/
+@media screen and (max-width: 30em) {
+
+    .navbar {
+        align-items: flex-start;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .navbar-links ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        padding: 0;
+        margin: 0;
+    }
+    .toggle-button {
+        display: block;
+        align-self: flex-end;
+        margin: 0.5rem 0;
+    }
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+    .navbar-links.active {
+        display: block;
+    }
+    .navbar-links li {
+        text-align: center;
+        padding: 0.5rem 0;
+    }
+}
+/*TABLETS*/
 @media screen and (min-width: 60em) {
     .navbar{
         flex-direction: row;
@@ -94,7 +142,7 @@ such that no text wraps
         display: flex;
         justify-content: space-between;
     } */
-    .navbar ul {
+    .navbar-links ul {
         display: flex;
         gap: 1rem;
     }

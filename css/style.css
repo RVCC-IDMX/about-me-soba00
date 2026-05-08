@@ -306,8 +306,15 @@ legend {
     box-shadow: 0 0 8px rgba(17,168,129,0.6);
 }
 
-/*PHONES*/
 
+
+/* FOLLOWING MEDIA STATES FOR RESPONSIVE DEIGN
+In order:
+        Phones
+        Tablets & Moniters
+        TVs and Large Screens
+                                                */
+/*PHONES*/
 @media screen and (max-width: 30em) {
     #bio img {
         width: 90%;
