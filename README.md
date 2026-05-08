@@ -24,6 +24,7 @@ This website is meant to serve as a personal blog and portfolio moving forward w
  - Embbeded media
  - Webform Design and application
  - C.R.A.P UI/UX Principles
+ - Navbar & Hambuerger navigation
 
 This site contains multiple different sections, each showcasing one or more of these. The site is seperated into sections as follows:
 
@@ -54,6 +55,13 @@ The palette's contrasting text and highlight colors were selected to maintain vi
 Palette was selected using WCAG readibility standards as a guideline.
 Text and background color-contrast-ratio tresholds pass WCAG AAA standards, far meeting maximum standards at current text size configurations.
 
+---
+
+## Blog Section
+
+Blog section focuses on explaining and demonstrating the use of hover effects in modern web design and in the future will hold new blog posts
+
+---
 
 ## Citations
 The following is a list of media and resorces used or referenced in the creation of this website:
@@ -61,7 +69,17 @@ The following is a list of media and resorces used or referenced in the creation
  - Google Fonts – Calistoga and Merriweather
  https://fonts.google.com/
 
- - Sample text from Pride and Prejudice by Jane Austen (public domain)
+ - MDN Web Docs :hover CSS pseudo-class
+  https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:hover
+
+ - Using Hover and Press Effects in Framer (Animation Lesson 2)
+  https://www.youtube.com/watch?v=ZzK8E-qEwo8
+
+ - Why you should not use the hover event – Joi Schünemann
+  https://medium.com/design-bootcamp/why-you-should-not-use-the-hover-event-d68bda7cc8b9
+
+ -Avatar Generator
+  https://getavataaars.com/Links to an external site.
 
  - Images used in the gallery are original unless otherwise specified
 
